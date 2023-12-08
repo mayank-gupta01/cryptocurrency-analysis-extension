@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Analytics Extension</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="minMaxDate.js" defer></script>
+    <script src="cryptoData.js" defer></script>
+    <script src="submitForm.js" defer></script>
+</head>
+
+<body>
+    <form id="cryptoForm" action="/submit-form" method="post">
+        <label for="cryptoType">Cryptocurrency Type:</label>
+        <select id="cryptoType" name="cryptoType" required>
+        </select>
+
+        <br>
+
+        <label for="startDate">Starting Date of Week:</label>
+        <input type="date" id="startDate" name="startDate" pattern="\d{4}-\d{2}-\d{2}" required>
+
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
